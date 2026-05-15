@@ -66,7 +66,7 @@ export default function Footer() {
         {/* Copyright */}
         <div className="border-t border-gray-200 pt-8 text-center">
           <p className="text-sm text-secondary">
-            © {currentYear} Seu Nome. Todos os direitos reservados. • Feito com
+            © {currentYear} Erick Santos Meira. Todos os direitos reservados. • Feito com
             Next.js & TailwindCSS
           </p>
         </div>

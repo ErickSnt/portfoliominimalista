@@ -20,14 +20,10 @@ const socialLinks: SocialLink[] = [
     url: 'www.linkedin.com/in/erick-meira-955104119',
     icon: '→',
   },
-  {
-    name: 'Twitter',
-    url: 'https://twitter.com/usuario',
-    icon: '→',
-  },
+
   {
     name: 'Email',
-    url: 'mailto:seu.email@exemplo.com',
+    url: 'ericksm703@exemplo.com',
     icon: '✉',
   },
 ]
@@ -136,7 +132,7 @@ export default function Contact() {
           {/* Social Links */}
           <motion.div
             variants={itemVariants}
-            className="flex flex-col justify-center space-y-4"
+            className="flex flex-col justify-top space-y-4"
           >
             <p className="text-secondary text-sm uppercase tracking-wider mb-6">
               Ou conecte-se através de:

@@ -1,8 +1,8 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import Link from 'next/link'
 import Image from 'next/image'
+import { useEffect, useState } from 'react'
 
 interface Project {
   id: number
@@ -10,55 +10,77 @@ interface Project {
   description: string
   tags: string[]
   link: string
-  image: string
-  //github: string
+  images: string[]
 }
-
-<Image
-  src="public\images\projects"
-  alt="Profile"
-  width={300}
-  height={300}
-/>
 
 const projects: Project[] = [
   {
     id: 1,
     title: 'Modelagem 3D e Animação',
     description:
-      'Galeria Digital de modelos 3D e animações criadas para jogos, VR e visualização arquitetônica.',
+      'Galeria digital de modelos 3D e animações criadas para jogos, VR e visualização arquitetônica.',
     tags: ['Unity Engine', 'Graphic Computation', 'C#', '.NET'],
     link: 'https://ericksm.artstation.com/',
-    image: '/images/work/OBAdm.jpg',
-    //github: 'https://github.com/usuario/saas-ecommerce',
+    images: [
+      '/images/work/OBAdm.jpg',
+      '/images/work/project2.jpg',
+      '/images/work/project3.jpg',
+    ],
   },
+
   {
     id: 2,
     title: 'Aplicativo Mobile React Native',
     description:
-      'Aplicativo mobile nativo para iOS e Android com autenticação, geolocalização e sincronização em tempo real com backend.',
+      'Aplicativo mobile para iOS e Android com autenticação, geolocalização e sincronização em tempo real.',
     tags: ['React Native', 'Firebase', 'Expo', 'Redux'],
     link: 'https://exemplo.com',
-    image: '/images/project2.jpg',
-    //github: 'https://github.com/usuario/mobile-app',
+    images: [
+      '/images/work/project2.jpg',
+      '/images/work/project3.jpg',
+      '/images/work/OBAdm.jpg',
+    ],
   },
+
   {
     id: 3,
     title: 'Engine 3D Interativa',
     description:
-      'Mecanismo de jogo 3D com física realista, sistema de partículas e renderização otimizada para VR.',
+      'Mecanismo 3D com física realista, partículas e renderização otimizada para VR.',
     tags: ['Unity', 'C#', 'HLSL', 'Blender'],
     link: 'https://exemplo.com',
-    image: '/images/project3.jpg',
-    //github: 'https://github.com/usuario/3d-engine',
+    images: [
+      '/images/work/project3.jpg',
+      '/images/work/OBAdm.jpg',
+      '/images/work/project2.jpg',
+    ],
   },
 ]
 
 export default function Work() {
+  const [currentImages, setCurrentImages] = useState<number[]>(
+    projects.map(() => 0)
+  )
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImages((prev) =>
+        prev.map((current, index) => {
+          const totalImages = projects[index].images.length
+          return (current + 1) % totalImages
+        })
+      )
+    }, 3000)
+
+    return () => clearInterval(interval)
+  }, [])
+
   const containerVariants = {
     hidden: { opacity: 0 },
+
     visible: {
       opacity: 1,
+
       transition: {
         staggerChildren: 0.2,
       },
@@ -66,15 +88,19 @@ export default function Work() {
   }
 
   const cardVariants = {
-    hidden: { opacity: 0, y: 20 },
+    hidden: {
+      opacity: 0,
+      y: 20,
+    },
+
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.6, ease: 'easeOut' },
-    },
-    hover: {
-      y: -8,
-      transition: { duration: 0.3 },
+
+      transition: {
+        duration: 0.6,
+        ease: 'easeOut',
+      },
     },
   }
 
@@ -88,6 +114,7 @@ export default function Work() {
       variants={containerVariants}
     >
       <div className="max-w-6xl mx-auto">
+
         {/* Header */}
         <motion.div
           variants={cardVariants}
@@ -96,71 +123,106 @@ export default function Work() {
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
             Trabalhos em Destaque
           </h2>
+
           <p className="text-lg text-secondary max-w-2xl">
-            Seleção de projetos que demonstram minha experiência em full stack
-            development, design e otimização de performance.
+            Projetos que unem tecnologia, arte digital e experiências
+            interativas contemporâneas.
           </p>
         </motion.div>
 
-        {/* Projects Grid */}
+        {/* Grid */}
         <motion.div
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
           variants={containerVariants}
         >
-          {projects.map((project) => (
+          {projects.map((project, projectIndex) => (
             <motion.div
               key={project.id}
               variants={cardVariants}
-              whileHover="hover"
+              whileHover={{ y: -8 }}
               className="group"
             >
-              <div className="h-full bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow duration-300">
-                                {/* Imagem */}
+              <div className="h-full flex flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm hover:shadow-2xl transition-all duration-500">
+
+                {/* Carrosel */}
                 <div className="relative w-full h-56 overflow-hidden">
-                  <Image
-                    src={project.image}
-                    alt={project.title}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
+
+                  <motion.div
+                    key={currentImages[projectIndex]}
+                    initial={{ opacity: 0, scale: 1.05 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.8 }}
+                    className="absolute inset-0"
+                  >
+                    <Image
+                      src={
+                        project.images[currentImages[projectIndex]]
+                      }
+                      alt={project.title}
+                      fill
+                      className="object-cover group-hover:scale-110 transition-transform duration-700"
+                    />
+                  </motion.div>
+
+                  {/* Overlay */}
+                  <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition duration-500" />
+
+                  {/* Indicators */}
+                  <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+                    {project.images.map((_, index) => (
+                      <div
+                        key={index}
+                        className={`h-2 rounded-full transition-all duration-300 ${
+                          currentImages[projectIndex] === index
+                            ? 'bg-white w-6'
+                            : 'bg-white/50 w-2'
+                        }`}
+                      />
+                    ))}
+                  </div>
                 </div>
-                {/* Projeto Header */}
-                <div className="mb-4">
-                  <h3 className="text-xl font-bold text-primary mb-2">
+
+                {/* Content */}
+                <div className="p-6 flex flex-col flex-1">
+
+                  <h3 className="text-xl font-bold text-primary mb-3">
                     {project.title}
                   </h3>
-                  <p className="text-secondary text-sm line-clamp-3">
+
+                  <p className="text-secondary text-sm leading-relaxed mb-5">
                     {project.description}
                   </p>
-                </div>
 
-                {/* Tags */}
-                <div className="flex flex-wrap gap-2 mb-6">
-                  {project.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="px-3 py-1 bg-accent/10 text-xs font-medium text-primary rounded-full"
+                  {/* Tags */}
+                  <div className="flex flex-wrap gap-2 mb-6">
+                    {project.tags.map((tag) => (
+                      <span
+                        key={tag}
+                        className="px-3 py-1 rounded-full bg-accent/10 text-xs font-medium text-primary"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+
+                  {/* Button */}
+                  <div className="pt-4 border-t border-gray-100 mt-auto">
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block w-full text-center rounded-lg bg-primary px-4 py-3 text-sm font-medium text-white hover:opacity-90 transition"
                     >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
+                      Ver Projeto
+                    </a>
+                  </div>
 
-                {/* Links */}
-                <div className="flex gap-3 pt-4 border-t border-gray-100">
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1 text-center px-4 py-2 text-sm font-medium text-primary hover:bg-primary hover:text-white rounded-lg transition"
-                  >
-                    Ver Demo
-                  </a>
                 </div>
               </div>
             </motion.div>
           ))}
         </motion.div>
+
       </div>
     </motion.section>
   )
