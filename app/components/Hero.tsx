@@ -37,7 +37,7 @@ export default function Hero() {
           variants={itemVariants}
           className="text-6xl md:text-7xl font-bold mb-4 text-primary"
         >
-          Seu Nome
+          Erick Meira
         </motion.h1>
 
         {/* Profissão */}
@@ -45,7 +45,8 @@ export default function Hero() {
           variants={itemVariants}
           className="text-2xl md:text-3xl text-secondary mb-6"
         >
-          Fullstack Developer
+          Fullstack Developer e Artista 3D
+        
         </motion.p>
 
         {/* Frase forte */}
@@ -53,8 +54,9 @@ export default function Hero() {
           variants={itemVariants}
           className="text-lg text-secondary max-w-2xl mx-auto mb-12 leading-relaxed"
         >
-          Criando soluções digitais inovadoras e escaláveis. Especializado em
-          desenvolvimento web moderno com foco em performance e experiência do usuário.
+          Transformando código em experiências digitais que unem tecnologia, criatividade e inovação.
+Especializado em criar aplicações modernas com foco em IA, performance e design interativo.
+
         </motion.p>
 
         {/* CTA Buttons */}

@@ -15,11 +15,11 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
-    title: 'Plataforma SaaS E-Commerce',
+    title: 'Modelagem 3D e Animação',
     description:
-      'Plataforma de e-commerce full-featured com painel administrativo, integração de pagamentos e análise de vendas em tempo real.',
-    tags: ['Next.js', 'TypeScript', 'PostgreSQL', 'Stripe'],
-    link: 'https://exemplo.com',
+      'Galeria Digital de modelos 3D e animações criadas para jogos, VR e visualização arquitetônica.',
+    tags: ['Unity Engine', '3D Modeling', 'Graphic Computation', 'C#', '.NET'],
+    link: 'https://ericksm.artstation.com/',
     github: 'https://github.com/usuario/saas-ecommerce',
   },
   {

@@ -16,8 +16,8 @@ module.exports = {
         mono: ['JetBrains Mono', 'monospace'],
       },
       animation: {
-        fadeIn: 'fadeIn 0.6s ease-in-out',
-        slideUp: 'slideUp 0.6s ease-out',
+        fadeIn: 'fadeIn 1.5s ease-in-out',
+        slideUp: 'slideUp 1.5s ease-out',
       },
       keyframes: {
         fadeIn: {

@@ -25,11 +25,11 @@ portfolio-minimalista/
 ├── public/                       # Arquivos estáticos
 │   └── (adicionar favicons)
 │
-├── package.json                  # Dependências do projeto
-├── tailwind.config.js            # Configuração Tailwind CSS
-├── tsconfig.json                 # Configuração TypeScript
-├── postcss.config.js             # Configuração PostCSS
-├── next.config.js                # Configuração Next.js
+├── package.json                  # Dependências do projeto  check
+├── tailwind.config.js            # Configuração Tailwind CSS check
+├── tsconfig.json                 # Configuração TypeScript  Check
+├── postcss.config.js             # Configuração PostCSS  Check 
+├── next.config.js                # Configuração Next.js  Check
 ├── .gitignore                    # Arquivos ignorados pelo git
 ├── README.md                     # Documentação do projeto
 └── STRUCTURE.md                  # Este arquivo
