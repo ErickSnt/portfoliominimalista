@@ -13,7 +13,7 @@ const techStack: TechCategory[] = [
     name: 'Formação Acadêmica',
     skills: [
       'Mestrado em Ciência da Computação, linha de pesquisa em Computação Gráfica - UFBA (Cursando)',
-      'Análise e Desenvolvimento de Sistemas - Estácio (2022-2025',
+      'Análise e Desenvolvimento de Sistemas - Estácio (2022-2025)',
       'Bacharelado em Artes Plásticas - UFBA (2015-2021)',
       'Mobilidade Acadêmica - Universidade do Porto, Portugal (2019-2020)',
     ],
@@ -44,11 +44,10 @@ const techStack: TechCategory[] = [
     skills: [
       'React Native',
       'Expo',
-      'MAUI',
       'C#',
       '.NET',
-      'Swift',
-      'Kotlin',
+      'MAUI',
+
     ],
   },
   {

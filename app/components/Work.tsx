@@ -16,10 +16,10 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
-    title: 'Modelagem 3D e Animação',
+    title: 'Criação de Cenários Gamificados para a ONEE',
     description:
-      'Galeria digital de modelos 3D e animações criadas para jogos, VR e visualização arquitetônica.',
-    tags: ['Unity Engine', 'Graphic Computation', 'C#', '.NET'],
+      'Criação de Cenário imersivo em VR para a Olimpíada Nacional de Eficiência Energética, utilizando Unity Engine, modelagem 3D e computação gráfica para uma experiência interativa e educativa.',
+    tags: ['Unity Engine', 'Graphic Computation', 'C#', '.NET', 'Blender'],
     link: 'https://ericksm.artstation.com/',
     images: [
       '/images/work/OBAdm.jpg',
@@ -30,9 +30,9 @@ const projects: Project[] = [
 
   {
     id: 2,
-    title: 'Aplicativo Mobile React Native',
+    title: 'Criação de Avatares ONC',
     description:
-      'Aplicativo mobile para iOS e Android com autenticação, geolocalização e sincronização em tempo real.',
+      'Criação dos avatares para a campanha da Olimpiada Nacional de Ciências no ano de 2023 e 2024.',
     tags: ['React Native', 'Firebase', 'Expo', 'Redux'],
     link: 'https://exemplo.com',
     images: [
@@ -42,12 +42,12 @@ const projects: Project[] = [
     ],
   },
 
-  {
+  { 
     id: 3,
-    title: 'Engine 3D Interativa',
+    title: 'UI Jogos Avaliativos OBAdm em 2024',
     description:
       'Mecanismo 3D com física realista, partículas e renderização otimizada para VR.',
-    tags: ['Unity', 'C#', 'HLSL', 'Blender'],
+    tags: ['Unity', 'Gdscript', 'HLSL', 'Photoshop','Godot Engine'],
     link: 'https://exemplo.com',
     images: [
       '/images/work/project3.jpg',
