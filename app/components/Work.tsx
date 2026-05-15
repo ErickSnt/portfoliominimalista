@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import Link from 'next/link'
+import Image from 'next/image'
 
 interface Project {
   id: number
@@ -9,8 +10,16 @@ interface Project {
   description: string
   tags: string[]
   link: string
-  github: string
+  image: string
+  //github: string
 }
+
+<Image
+  src="public\images\projects"
+  alt="Profile"
+  width={300}
+  height={300}
+/>
 
 const projects: Project[] = [
   {
@@ -18,9 +27,10 @@ const projects: Project[] = [
     title: 'Modelagem 3D e Animação',
     description:
       'Galeria Digital de modelos 3D e animações criadas para jogos, VR e visualização arquitetônica.',
-    tags: ['Unity Engine', '3D Modeling', 'Graphic Computation', 'C#', '.NET'],
+    tags: ['Unity Engine', 'Graphic Computation', 'C#', '.NET'],
     link: 'https://ericksm.artstation.com/',
-    github: 'https://github.com/usuario/saas-ecommerce',
+    image: '/images/work/OBAdm.jpg',
+    //github: 'https://github.com/usuario/saas-ecommerce',
   },
   {
     id: 2,
@@ -29,7 +39,8 @@ const projects: Project[] = [
       'Aplicativo mobile nativo para iOS e Android com autenticação, geolocalização e sincronização em tempo real com backend.',
     tags: ['React Native', 'Firebase', 'Expo', 'Redux'],
     link: 'https://exemplo.com',
-    github: 'https://github.com/usuario/mobile-app',
+    image: '/images/project2.jpg',
+    //github: 'https://github.com/usuario/mobile-app',
   },
   {
     id: 3,
@@ -38,7 +49,8 @@ const projects: Project[] = [
       'Mecanismo de jogo 3D com física realista, sistema de partículas e renderização otimizada para VR.',
     tags: ['Unity', 'C#', 'HLSL', 'Blender'],
     link: 'https://exemplo.com',
-    github: 'https://github.com/usuario/3d-engine',
+    image: '/images/project3.jpg',
+    //github: 'https://github.com/usuario/3d-engine',
   },
 ]
 
@@ -103,6 +115,15 @@ export default function Work() {
               className="group"
             >
               <div className="h-full bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow duration-300">
+                                {/* Imagem */}
+                <div className="relative w-full h-56 overflow-hidden">
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
                 {/* Projeto Header */}
                 <div className="mb-4">
                   <h3 className="text-xl font-bold text-primary mb-2">
@@ -134,14 +155,6 @@ export default function Work() {
                     className="flex-1 text-center px-4 py-2 text-sm font-medium text-primary hover:bg-primary hover:text-white rounded-lg transition"
                   >
                     Ver Demo
-                  </a>
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1 text-center px-4 py-2 text-sm font-medium border border-primary text-primary hover:bg-primary hover:text-white rounded-lg transition"
-                  >
-                    GitHub
                   </a>
                 </div>
               </div>

@@ -28,12 +28,12 @@ export const metadata: Metadata = {
     description:
       'Portfólio de Fullstack Developer especializado em Next.js, React e Web3',
   },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Seu Nome - Fullstack Developer',
-    description:
-      'Portfólio de Fullstack Developer especializado em Next.js, React e Web3',
-  },
+ // twitter: {
+    //card: 'summary_large_image',
+   // title: 'Seu Nome - Fullstack Developer',
+    //description:
+   //   'Portfólio de Fullstack Developer especializado em Next.js, React e Web3',
+ // },
 }
 
 export default function RootLayout({

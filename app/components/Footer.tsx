@@ -17,7 +17,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           {/* Brand */}
           <div>
-            <h3 className="text-lg font-bold text-primary mb-2">Seu Nome</h3>
+            <h3 className="text-lg font-bold text-primary mb-2">Erick Meira</h3>
             <p className="text-sm text-secondary">
               Fullstack Developer & Creative Technologist
             </p>
@@ -45,9 +45,8 @@ export default function Footer() {
             <h4 className="text-sm font-bold text-primary mb-4">Social</h4>
             <ul className="space-y-2">
               {[
-                { name: 'GitHub', url: 'https://github.com' },
+                { name: 'GitHub', url: 'https://github.com/ErickSnt'},
                 { name: 'LinkedIn', url: 'https://linkedin.com' },
-                { name: 'Twitter', url: 'https://twitter.com' },
               ].map((link) => (
                 <li key={link.name}>
                   <a

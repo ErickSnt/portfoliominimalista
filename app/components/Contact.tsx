@@ -12,12 +12,12 @@ interface SocialLink {
 const socialLinks: SocialLink[] = [
   {
     name: 'GitHub',
-    url: 'https://github.com/usuario',
+    url: 'https://github.com/ErickSnt',
     icon: '→',
   },
   {
     name: 'LinkedIn',
-    url: 'https://linkedin.com/in/usuario',
+    url: 'www.linkedin.com/in/erick-meira-955104119',
     icon: '→',
   },
   {
