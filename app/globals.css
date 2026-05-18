@@ -52,6 +52,15 @@ a:hover {
   color: #666666;
 }
 
+.text-glow-neon {
+  text-shadow:
+    0 0 5px #fff,
+    0 0 5px #fff,
+    0 0 3px #aac782,
+    0 0 3px #aac782,
+    0 0 5px #09ff2e;
+}
+
 /* Smooth animations */
 @keyframes fadeIn {
   from {

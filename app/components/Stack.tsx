@@ -74,7 +74,6 @@ const techStack: TechCategory[] = [
       'Content Generation',
       'Data Analysis',
       '3D Model Generation',
-,
     ],
   },
   {

@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 export default function Hero() {
   const containerVariants = {
@@ -26,16 +27,24 @@ export default function Hero() {
   return (
     <motion.section
       id="hero"
-      className="relative min-h-screen flex items-center justify-center px-6 py-20"
+      //className="relative min-h-screen flex items-center justify-center px-6 py-20"
+      className="relative overflow-hidden min-h-screen flex items-center justify-center px-6 py-20"
       initial="hidden"
       animate="visible"
       variants={containerVariants}
     >
+    <Image
+     src="/images/hero/Viewport.webp"
+     alt="Background"
+     fill
+     priority
+     className="object-cover opacity-60 -z-10 pointer-events-none"
+  />
       <div className="max-w-4xl w-full text-center">
         {/* Nome */}
         <motion.h1
           variants={itemVariants}
-          className="text-6xl md:text-7xl font-bold mb-4 text-primary"
+          className="text-6xl md:text-7xl font-bold mb-4 text-primary text-glow-neon"
         >
           Erick Meira
         </motion.h1>
