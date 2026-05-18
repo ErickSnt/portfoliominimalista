@@ -73,15 +73,16 @@ const projects: Project[] = [
   },
       { 
     id: 5,
-    title: 'UI Jogos Avaliativos OBAdm em 2024',
+    title: 'MOBTEX Laboratório de Química Gamificado',
     description:
-      'Mecanismo 3D com física realista, partículas e renderização otimizada para VR.',
-    tags: ['Unity', 'Gdscript', 'HLSL', 'Photoshop','Godot Engine'],
+      'Ambiente gamificado de um laboratório de química. Em um laboratório de química, são realizadas atividades como experimentos, preparo de soluções e análise de substâncias, utilizando equipamentos como béqueres, pipetas, tubos de ensaio e balanças. As atividades seguem regras de segurança, incluindo uso de EPIs, organização e descarte correto de resíduos químicos.',
+    tags: ['.NET', 'C#', 'Photoshop','Blender','Unity Engine'],
     link: 'https://exemplo.com',
     images: [
-      '/images/work/project3.jpg',
-      '/images/work/OBAdm.jpg',
-      '/images/work/project2.jpg',
+      '/images/work/ImplementacaoUnity3.jpg',
+      '/images/work/ImplementacaoUnity2.jpg',
+      '/images/work/ImplementacaoUnity4 (1).jpg',
+      '/images/work/ImplementacaoUnity5 (1).jpg',
     ],
   },
       { 
