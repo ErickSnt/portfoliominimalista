@@ -22,9 +22,9 @@ const projects: Project[] = [
     tags: ['Unity Engine', 'Graphic Computation', 'C#', '.NET', 'Blender'],
     link: 'https://ericksm.artstation.com/',
     images: [
-      '/images/work/OBAdm.jpg',
-      '/images/work/project2.jpg',
-      '/images/work/project3.jpg',
+      '/images/work/TabuleiroONEE.jpg',
+      '/images/work/Tabuleiro2ONEE.jpg',
+      '/images/work/UI.jpg',
     ],
   },
 
@@ -36,14 +36,56 @@ const projects: Project[] = [
     tags: ['React Native', 'Firebase', 'Expo', 'Redux'],
     link: 'https://exemplo.com',
     images: [
-      '/images/work/project2.jpg',
-      '/images/work/project3.jpg',
-      '/images/work/OBAdm.jpg',
+      '/images/work/cartaz-onc-2023-2.webp',
+      '/images/work/ONC2023.jpeg',
+      '/images/work/V2_cartaz-onc-2024 (1).jpg',
+      '/images/work/ONC2024.jpg',
     ],
   },
 
   { 
     id: 3,
+    title: 'UI Jogos Avaliativos OBAdm em 2024',
+    description:
+      'Mecanismo 3D com física realista, partículas e renderização otimizada para VR.',
+    tags: ['Unity', 'Gdscript', 'HLSL', 'Photoshop','Godot Engine'],
+    link: 'https://exemplo.com',
+    images: [
+      '/images/work/V2_OBADCellMockup.jpg',
+      '/images/work/V2_AdmgamesMockupV2.jpg',
+      '/images/work/V2_AnaliseEmpresarialMockup_v2.jpg',
+      '/images/work/V2_BrancoTabuleiroSustentavelMockup (1).jpg',
+    ],
+  },
+    { 
+    id: 4,
+    title: 'Imersão Gamificada ONC SNCT 2023/2024/2025',
+    description:
+      'Atividade em gamificada em realidade virtual apresentada na Semana Nacional de Ciência e Tecnologia nas edições de 2023, 2024 e 2025. Apresentado no stand da ONC. ',
+    tags: ['Unity', 'Gdscript', 'HLSL', 'Photoshop','Godot Engine'],
+    link: 'https://exemplo.com',
+    images: [
+      '/images/work/ONCgamification.jpg',
+      '/images/work/ONC_Game_0000_Image Sequence_007_0000.jpg',
+      '/images/work/ONC_Game_0001_Image Sequence_005_0000.jpg',
+      '/images/work/ONC_Game_0002_Layer 0.jpg',
+    ],
+  },
+      { 
+    id: 5,
+    title: 'UI Jogos Avaliativos OBAdm em 2024',
+    description:
+      'Mecanismo 3D com física realista, partículas e renderização otimizada para VR.',
+    tags: ['Unity', 'Gdscript', 'HLSL', 'Photoshop','Godot Engine'],
+    link: 'https://exemplo.com',
+    images: [
+      '/images/work/project3.jpg',
+      '/images/work/OBAdm.jpg',
+      '/images/work/project2.jpg',
+    ],
+  },
+      { 
+    id: 6,
     title: 'UI Jogos Avaliativos OBAdm em 2024',
     description:
       'Mecanismo 3D com física realista, partículas e renderização otimizada para VR.',

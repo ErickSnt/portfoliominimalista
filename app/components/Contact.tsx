@@ -160,8 +160,20 @@ export default function Contact() {
                   rel="noopener noreferrer"
                   variants={itemVariants}
                   whileHover={{ x: 8 }}
-                  className="flex items-center gap-4 p-4 rounded-lg border border-gray-200 hover:bg-accent/5 hover:border-primary transition group"
-                >
+                  //className="flex items-center gap-4 p-4 rounded-lg border border-gray-200 bg-primary/100 hover:bg-accent/10 hover:border-primary transition group"
+                  className="
+                    flex items-center gap-4
+                    p-4 rounded-xl
+                    bg-gray-100 bg-card/80
+                    backdrop-blur-md
+                    border border-border
+                    hover:border-primary
+                    hover:bg-accent/10
+                    hover:shadow-[0_0_20px_rgba(255,255,255,0.08)]
+                    transition-all duration-300
+                    group
+                    "
+               >
                   <span className="text-2xl text-primary">{link.icon}</span>
                   <div>
                     <p className="font-medium text-primary">{link.name}</p>

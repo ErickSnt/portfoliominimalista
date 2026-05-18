@@ -10,6 +10,7 @@ module.exports = {
         primary: '#000000',
         secondary: '#2d4108',
         accent: '#1f1f1f',
+        terciary: '#111111',
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
