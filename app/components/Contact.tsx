@@ -17,13 +17,13 @@ const socialLinks: SocialLink[] = [
   },
   {
     name: 'LinkedIn',
-    url: 'www.linkedin.com/in/erick-meira-955104119',
+    url: 'https://www.linkedin.com/in/erick-meira-955104119',
     icon: '→',
   },
 
   {
     name: 'Email',
-    url: 'ericksm703@exemplo.com',
+    url: 'https://mail.google.com/mail/u/0/?fs=1&to=ericksm703@hotmail.com',
     icon: '✉',
   },
 ]
