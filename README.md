@@ -5,14 +5,15 @@ Um portfólio simples, rápido e responsivo feito com Next.js, Tailwind CSS e Fr
 A ideia desse projeto foi criar um layout direto ao ponto, com foco em apresentação pessoal, projetos e experiência, sem excesso de elementos visuais.
 
 ##O que tem no projeto
-Layout minimalista
-Navegação suave entre seções
-Responsividade para mobile, tablet e desktop
-Animações leves
-Estrutura organizada para personalização
-SEO básico configurado
-Pronto para deploy na Vercel
-Estrutura do projeto
+```
+-Layout minimalista
+-Navegação suave entre seções
+-Responsividade para mobile, tablet e desktop
+-Animações leves
+-Estrutura organizada para personalização
+-SEO básico configurado
+-Pronto para deploy na Vercel
+-Estrutura do projeto
 
 ```
 portfolio-minimalista/
@@ -37,18 +38,19 @@ portfolio-minimalista/
 ```
 
 Rodando o projeto
-Clonar o repositório
-git clone https://github.com/usuario/portfolio-minimalista.git
-cd portfolio-minimalista
-Instalar dependências
-npm install
+-Clonar o repositório
+-git clone https://github.com/usuario/portfolio-minimalista.git
+-cd portfolio-minimalista
+-Instalar dependências
+-npm install
 
 ou
 
-yarn install
-Iniciar ambiente de desenvolvimento
-npm run dev
+-yarn install
+-Iniciar ambiente de desenvolvimento
+-npm run dev
 
+```
 Depois disso, abra:
 
 http://localhost:3000
@@ -58,12 +60,17 @@ npm start
 Personalização
 Alterar informações pessoais
 
+```
+
 Os dados principais ficam nesses arquivos:
 
 Hero.tsx → nome, descrição e apresentação
 Work.tsx → projetos
 Stack.tsx → tecnologias
 Contact.tsx → contato e redes sociais
+
+```
+
 Alterar cores
 
 No arquivo tailwind.config.js:
@@ -77,54 +84,19 @@ theme: {
     },
   },
 }
-Adicionar novas seções
-Crie um componente em app/components
-Importe no page.tsx
-Adicione na navegação
-Tecnologias usadas
-Next.js
-React
-Tailwind CSS
-Framer Motion
-TypeScript
-Deploy
 
-O jeito mais simples de publicar é usando a Vercel.
-
-Passos
-git add .
-git commit -m "Initial commit"
-git push origin main
-
-Depois:
-
-Acesse Vercel
-Clique em “New Project”
-Importe o repositório
-Faça o deploy
-
-Na maioria dos casos, não precisa alterar nenhuma configuração.
-
-Performance
-
-Algumas otimizações já configuradas:
-
-Code splitting automático
-Lazy loading
-Otimização de imagens
-CSS minificado
-Font optimization
-SEO
+```
 
 O projeto já possui:
 
-Metadata básica
-Open Graph
-Estrutura preparada para sitemap
-Robots.txt
-Configuração inicial para compartilhamento social
-Editando os projetos
+-Metadata básica
+-Open Graph
+-Estrutura preparada para sitemap
+-Robots.txt
+-Configuração inicial para compartilhamento social
+-Editando os projetos
 
+```
 Em Work.tsx:
 
 const projects = [
