@@ -2,6 +2,8 @@
 
 import { motion } from 'framer-motion'
 import Link from 'next/link'
+import Image from 'next/image'
+
 
 interface SocialLink {
   name: string
@@ -51,12 +53,20 @@ export default function Contact() {
   return (
     <motion.section
       id="contact"
-      className="py-20 px-6 bg-accent/5"
+      //className="py-20 px-6 bg-accent/5 "
+      className="relative min-h-screen flex items-center justify-center px-6 py-20 overflow-hidden"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, margin: '-100px' }}
       variants={containerVariants}
     >
+    <Image
+     src="/images/contact/WebsiteV2.webp"
+     alt="Background"
+     fill
+     priority
+     className="object-cover opacity-20 -z-10 pointer-events-none"
+    />
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <motion.div
@@ -155,9 +165,7 @@ export default function Contact() {
                   <span className="text-2xl text-primary">{link.icon}</span>
                   <div>
                     <p className="font-medium text-primary">{link.name}</p>
-                    <p className="text-sm text-secondary group-hover:text-primary transition">
-                      Abrir →
-                    </p>
+
                   </div>
                 </motion.a>
               ))}
