@@ -54,7 +54,7 @@ export default function Hero() {
           variants={itemVariants}
           className="text-2xl md:text-3xl text-secondary mb-6"
         >
-          Fullstack Developer e Artista 3D
+          Fullstack Developer U Artista 3D
         
         </motion.p>
 
@@ -63,8 +63,7 @@ export default function Hero() {
           variants={itemVariants}
           className="text-lg text-secondary max-w-2xl mx-auto mb-12 leading-relaxed"
         >
-          Transformando código em experiências digitais que unem tecnologia, criatividade e inovação.
-Especializado em criar aplicações modernas com foco em IA, performance e design interativo.
+          Transformando computação gráfica, inteligência artificial e modelagem 3D em experiências digitais interativas — desenvolvendo sistemas que unem estética, performance e inovação tecnológica.
 
         </motion.p>
 

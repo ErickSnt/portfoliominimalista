@@ -14,17 +14,15 @@ interface Project {
 }
 
 const projects: Project[] = [
-  {
+        { 
     id: 1,
-    title: 'Criação de Cenários Gamificados para a ONEE',
+    title: 'LLM/IA para reconhecimento de Imagem em tempo real',
     description:
-      'Criação de Cenário imersivo em VR para a Olimpíada Nacional de Eficiência Energética, utilizando Unity Engine, modelagem 3D e computação gráfica para uma experiência interativa e educativa.',
-    tags: ['Unity Engine', 'Graphic Computation', 'C#', '.NET', 'Blender'],
-    link: 'https://ericksm.artstation.com/',
+      'Experimentação prática com llM, utilizando modelos para reconhecimento de imagem em tempo real, aplicando técnicas de visão computacional e aprendizado profundo para identificar pessoas, objetos e padrões em vídeos ou fluxos de câmera ao vivo.',
+    tags: ['Unity', 'Gdscript', 'HLSL', 'Photoshop','Godot Engine'],
+    link: 'https://exemplo.com',
     images: [
-      '/images/work/TabuleiroONEE.jpg',
-      '/images/work/Tabuleiro2ONEE.jpg',
-      '/images/work/UI.jpg',
+      '/images/work/ImageRecognition.gif',
     ],
   },
 
@@ -85,17 +83,17 @@ const projects: Project[] = [
       '/images/work/ImplementacaoUnity5 (1).jpg',
     ],
   },
-      { 
+{
     id: 6,
-    title: 'UI Jogos Avaliativos OBAdm em 2024',
+    title: 'Criação de Cenários Gamificados para a ONEE',
     description:
-      'Mecanismo 3D com física realista, partículas e renderização otimizada para VR.',
-    tags: ['Unity', 'Gdscript', 'HLSL', 'Photoshop','Godot Engine'],
-    link: 'https://exemplo.com',
+      'Criação de Cenário imersivo em VR para a Olimpíada Nacional de Eficiência Energética, utilizando Unity Engine, modelagem 3D e computação gráfica para uma experiência interativa e educativa.',
+    tags: ['Unity Engine', 'Graphic Computation', 'C#', '.NET', 'Blender'],
+    link: 'https://ericksm.artstation.com/',
     images: [
-      '/images/work/project3.jpg',
-      '/images/work/OBAdm.jpg',
-      '/images/work/project2.jpg',
+      '/images/work/TabuleiroONEE.jpg',
+      '/images/work/Tabuleiro2ONEE.jpg',
+      '/images/work/UI.jpg',
     ],
   },
 ]
