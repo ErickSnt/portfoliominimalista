@@ -13,6 +13,8 @@ Estrutura organizada para personalização
 SEO básico configurado
 Pronto para deploy na Vercel
 Estrutura do projeto
+
+```
 portfolio-minimalista/
 ├── app/
 │   ├── components/
@@ -31,6 +33,9 @@ portfolio-minimalista/
 ├── postcss.config.js
 ├── next.config.js
 └── README.md
+
+```
+
 Rodando o projeto
 Clonar o repositório
 git clone https://github.com/usuario/portfolio-minimalista.git
