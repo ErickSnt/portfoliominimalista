@@ -23,7 +23,7 @@ export default function Navigation() {
             href="#hero"
             className="font-bold text-xl text-primary hover:text-secondary transition"
           >
-            ◆
+            ◆◆◆ 
           </Link>
 
           {/* Desktop Navigation */}
