@@ -30,6 +30,11 @@ portfolio-minimalista/
 │   ├── layout.tsx
 │   ├── page.tsx
 │   └── globals.css
+├── public/
+│     └── Images/
+│        ├── hero
+│        ├── work
+│        └── contact
 ├── package.json
 ├── tailwind.config.js
 ├── tsconfig.json
@@ -63,9 +68,9 @@ Personalização
 Alterar informações pessoais
 
 ```
+Os dados principais ficam nesses arquivos:
 ```
 
-Os dados principais ficam nesses arquivos:
 
 Hero.tsx → nome, descrição e apresentação
 Work.tsx → projetos
@@ -73,8 +78,8 @@ Stack.tsx → tecnologias
 Contact.tsx → contato e redes sociais
 
 ```
-```
 Alterar cores
+```
 
 No arquivo tailwind.config.js:
 

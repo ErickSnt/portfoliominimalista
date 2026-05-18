@@ -51,23 +51,30 @@ const techStack: TechCategory[] = [
     ],
   },
   {
-    name: 'Game Development',
+    name: 'Game Development & 3D technologies',
     skills: [
       'Unity',
       'C#',
       'Godot Engine',
       'Blender',
       'Unreal Engine',
-    ],
-  },
-  {
-    name: 'Design & 3D',
-    skills: [
+      'Three.js',
       'Photoshop',
       'Blender',
       'Figma',
       'Z Brush',
       'Substance Painter',
+    ],
+  },
+  {
+    name: 'IA & Large Language Models',
+    skills: [
+      'Immage Recognition',
+      'Chatbots',
+      'Content Generation',
+      'Data Analysis',
+      '3D Model Generation',
+,
     ],
   },
   {
