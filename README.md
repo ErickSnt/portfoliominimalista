@@ -1,10 +1,10 @@
-##Portfólio Minimalista
+Portfólio Minimalista
 
 Um portfólio simples, rápido e responsivo feito com Next.js, Tailwind CSS e Framer Motion.
 
 A ideia desse projeto foi criar um layout direto ao ponto, com foco em apresentação pessoal, projetos e experiência, sem excesso de elementos visuais.
 
-##O que tem no projeto
+Sobre o projeto:
 ```
 -Layout minimalista
 -Navegação suave entre seções
@@ -15,6 +15,8 @@ A ideia desse projeto foi criar um layout direto ao ponto, com foco em apresenta
 -Pronto para deploy na Vercel
 -Estrutura do projeto
 
+```
+Estrutura:
 ```
 portfolio-minimalista/
 ├── app/
@@ -34,7 +36,7 @@ portfolio-minimalista/
 ├── postcss.config.js
 ├── next.config.js
 └── README.md
-
+```
 ```
 
 Rodando o projeto
@@ -49,7 +51,7 @@ ou
 -yarn install
 -Iniciar ambiente de desenvolvimento
 -npm run dev
-
+```
 ```
 Depois disso, abra:
 
@@ -61,6 +63,7 @@ Personalização
 Alterar informações pessoais
 
 ```
+```
 
 Os dados principais ficam nesses arquivos:
 
@@ -70,7 +73,7 @@ Stack.tsx → tecnologias
 Contact.tsx → contato e redes sociais
 
 ```
-
+```
 Alterar cores
 
 No arquivo tailwind.config.js:
@@ -86,19 +89,19 @@ theme: {
 }
 
 ```
-
 O projeto já possui:
 
+```
 -Metadata básica
 -Open Graph
 -Estrutura preparada para sitemap
 -Robots.txt
 -Configuração inicial para compartilhamento social
 -Editando os projetos
-
+```
 ```
 Em Work.tsx:
-
+```
 const projects = [
   {
     title: 'Nome do Projeto',
@@ -108,3 +111,4 @@ const projects = [
     github: 'https://github.com/user/repo',
   },
 ]
+```
