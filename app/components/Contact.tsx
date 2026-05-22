@@ -126,7 +126,7 @@ export default function Contact() {
               </label>
               <textarea
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-primary transition h-32 resize-none"
-                placeholder="Sua mensagem..."
+                placeholder="Função em implementação, favor entrar em contato pelo e-mail 'ericksm703@hotmail.com' "
                 required
               />
             </div>
