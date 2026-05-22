@@ -4,6 +4,11 @@ Um portfólio simples, rápido e responsivo feito com Next.js, Tailwind CSS e Fr
 
 A ideia desse projeto foi criar um layout direto ao ponto, com foco em apresentação pessoal, projetos e experiência, sem excesso de elementos visuais.
 
+Acesso em: 
+About
+```portfoliominimalista.vercel.app```
+
+
 Sobre o projeto:
 ```
 -Layout minimalista
